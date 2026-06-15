@@ -1216,7 +1216,7 @@ footer{
       rgba(0,0,0,0.18),
       rgba(97,68,45,0.58)
     ),
-    url("img/img3.jpg") 50% center/cover no-repeat;
+    url("img3.jpg") 50% center/cover no-repeat;
 
   filter:blur(2px);
 
