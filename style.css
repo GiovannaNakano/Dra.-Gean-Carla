@@ -337,7 +337,7 @@ height:auto;
       rgba(0,0,0,0.05),
       rgba(97,68,45,0.35)
     ),
-    url("img/img3.jpg") center center/cover no-repeat;
+    url("img3.jpg") center center/cover no-repeat;
 
     animation:heroZoom 2.5s ease-out forwards;
 }
