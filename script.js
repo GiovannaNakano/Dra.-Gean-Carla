@@ -115,90 +115,15 @@ window.addEventListener('scroll', () => {
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
+console.log("MENU:", menu);
+console.log("BOTAO:", menuToggle);
+
 menuToggle.addEventListener('click', () => {
+
+  console.log("CLICOU");
 
   menu.classList.toggle('active');
 
-  // animação hamburguer
   menuToggle.classList.toggle('active');
 
-});
-
-// =========================
-// FECHAR MENU AO CLICAR
-// =========================
-
-const menuLinks = document.querySelectorAll('.menu a');
-
-menuLinks.forEach(link => {
-
-  link.addEventListener('click', () => {
-
-    menu.classList.remove('active');
-    menuToggle.classList.remove('active');
-
-  });
-
-});
-
-// =========================
-// SCROLL SUAVE SEM #
-// =========================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-  anchor.addEventListener('click', function(e){
-
-    const targetId = this.getAttribute('href');
-
-    if(targetId.length > 1){
-
-      e.preventDefault();
-
-      const target = document.querySelector(targetId);
-
-      if(target){
-
-        target.scrollIntoView({
-          behavior:'smooth'
-        });
-
-        history.replaceState(null, null, ' ');
-
-      }
-
-    }
-
-  });
-
-});
-
-alert("JS carregado");
-
-console.log("1");
-
-const nav = document.querySelector('.nav');
-
-console.log("2");
-
-// resto do código FAQ...
-
-console.log("3");
-
-// resto dos cards...
-
-console.log("4");
-
-// bloco whatsapp...
-
-console.log("5");
-
-// MENU MOBILE
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
-
-console.log("6");
-
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
 });
