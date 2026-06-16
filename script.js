@@ -174,3 +174,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 alert("JS carregado");
+
+console.log("1");
+
+const nav = document.querySelector('.nav');
+
+console.log("2");
+
+// resto do código FAQ...
+
+console.log("3");
+
+// resto dos cards...
+
+console.log("4");
+
+// bloco whatsapp...
+
+console.log("5");
+
+// MENU MOBILE
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+console.log("6");
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
