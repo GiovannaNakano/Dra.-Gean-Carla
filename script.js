@@ -172,3 +172,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 
 });
+
+alert("JS carregado");
