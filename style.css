@@ -121,8 +121,8 @@ img{
 
   border-bottom:1px solid rgba(0,0,0,0.06);
 
-  overflow:hidden;
-  isolation:isolate;
+  overflow:visible;
+  isolation:auto;
 
   transition:all .3s ease;
 
@@ -212,6 +212,7 @@ height:auto;
 ========================= */
 
 .menu{
+    z-index:9999;
   display:flex;
   align-items:center;
 
@@ -337,7 +338,7 @@ height:auto;
       rgba(0,0,0,0.05),
       rgba(97,68,45,0.35)
     ),
-    url("img3.jpg") center center/cover no-repeat;
+    url("img/img3.jpg") center center/cover no-repeat;
 
     animation:heroZoom 2.5s ease-out forwards;
 }
@@ -1149,26 +1150,41 @@ footer{
     display:block;
   }
 
- .menu{
+  .menu{
     position:fixed;
+
     top:78px;
     right:6%;
-
-    z-index:9999;
 
     width:230px;
 
     background:rgba(250,245,239,0.98);
 
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    padding:24px;
+
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+
     opacity:0;
     visibility:hidden;
 
     transform:translateY(-10px);
+
+    transition:.3s ease;
   }
 
   .menu.active{
     opacity:1;
     visibility:visible;
+
     transform:translateY(0);
   }
 
@@ -1201,7 +1217,7 @@ footer{
       rgba(0,0,0,0.18),
       rgba(97,68,45,0.58)
     ),
-    url("img3.jpg") 50% center/cover no-repeat;
+    url("img/img3.jpg") 50% center/cover no-repeat;
 
   filter:blur(2px);
 
